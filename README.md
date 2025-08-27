@@ -16,10 +16,11 @@ Performance is evaluated against SPY as a benchmark, with transaction costs appl
 ## Results
 The momentum strategy did not outperform SPY in this period:
 
-- **Long-only (top 40)** delivered positive returns, but with **lower CAGR and Sharpe ratio** than SPY and **larger drawdowns**.  
-- **Long/short (20/20)** performed poorly, with near-zero returns and severe drawdowns.  
-- Overall, results suggest that a simple cross-sectional momentum factor in large-cap US equities is **not competitive** with buy-and-hold SPY.  
-- The evidence also indicates that **the short side of momentum adds little or no value** in this setting.
+- **Long-only (top 40)** delivered positive returns, but with **lower CAGR and Sharpe ratio** than SPY and **larger drawdowns**. Performance was largely explained by market beta, indicating little evidence of consistent alpha.
+- **Long/short (20/20)** designed to be beta-neutral but performed poorly, with near-zero returns and severe drawdowns. The short side added volatility without producing offsetting alpha, reducing overall performance.
+- **Overall**, results suggest that a simple cross-sectional momentum factor in large-cap US equities is **not competitive** with buy-and-hold SPY. The evidence also indicates that the short leg of momentum contributed limited value in this setting.
+- **Future improvements** could include testing in small-/mid-cap equities, refining the momentum signal (different lookback windows, volatility or liquidity filters), and adding risk controls to reduce drawdowns.
+- **Conclusion:** Momentum has historically been profitable, but in large-cap U.S. equities it’s been heavily studied and traded. So the edge has been largely arbitraged away — which is consistent with my results, where the long-only side mostly gave market beta and the long/short portfolio failed to add alpha.
 
 ### Example Equity Curve
 ![Equity Curve](equity_curve_long_only.png)
