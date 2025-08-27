@@ -5,7 +5,7 @@ The strategy forms monthly long/short portfolios by ranking stocks on their past
 Performance is evaluated against SPY as a benchmark, with transaction costs applied via turnover.  
 
 ## Key Features
-- Historical S&P 500 constituents (CSV provided in `data/`)  
+- Historical S&P 500 constituents   
 - Price data sourced via yfinance (auto-adjusted prices)  
 - Cross-sectional momentum signal (12–1 lookback)  
 - Dollar-neutral long/short portfolio construction  
@@ -14,10 +14,12 @@ Performance is evaluated against SPY as a benchmark, with transaction costs appl
 - Visualizations: equity curves, turnover, and portfolio stats  
 
 ## Results
-The momentum strategy historically achieved:  
-- **Higher risk-adjusted returns** (Sharpe ratio) compared to SPY  
-- **Smaller drawdowns** during extended bear markets  
-- **Lag in strong bull phases**, consistent with momentum factor behavior
+The momentum strategy did not outperform SPY in this period:
+
+- **Long-only (top 40)** delivered positive returns, but with **lower CAGR and Sharpe ratio** than SPY and **larger drawdowns**.  
+- **Long/short (20/20)** performed poorly, with near-zero returns and severe drawdowns.  
+- Overall, results suggest that a simple cross-sectional momentum factor in large-cap US equities is **not competitive** with buy-and-hold SPY.  
+- The evidence also indicates that **the short side of momentum adds little or no value** in this setting.
 
 ### Example Equity Curve
 ![Equity Curve](equity_curve_long_only.png)
