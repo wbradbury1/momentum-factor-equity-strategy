@@ -1,0 +1,8 @@
+# Core requirements
+numpy
+pandas
+matplotlib
+yfinance
+
+# For running the notebook
+jupyterlab
