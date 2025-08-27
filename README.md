@@ -1,4 +1,4 @@
-# Momentum Factor Equity Strategy
+# Momentum Factor Equity Strategy with Backtest
 
 This project implements and backtests a **cross-sectional 12–1 momentum factor strategy** on the S&P 500.  
 The strategy forms monthly long/short portfolios by ranking stocks on their past 12-month returns (excluding the most recent month).  
